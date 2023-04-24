@@ -17,15 +17,14 @@ import "assets/vendor/nucleo/css/nucleo.css";
 import "assets/vendor/quill/dist/quill.core.css";
 import "assets/vendor/select2/dist/css/select2.min.css";
 import "assets/vendor/sweetalert2/dist/sweetalert2.min.css";
-// core styles
 import "assets/scss/argon-dashboard-pro-react.scss?v1.1.0";
+// core styles
 import AdminLayout from "layouts/Admin.js";
 import Dashboard from "views/pages/dashboards/Dashboard";
-import Login from "views/pages/examples/Login";
+import Login from "views/pages/login/Login";
 import AuthLayout from "layouts/Auth";
 import Alternative from "views/pages/dashboards/Alternative";
 import EditPage from "views/pages/editpage";
-import Elements from "views/pages/forms/Elements";
 import NewsList from "views/pages/newslist";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -50,10 +49,6 @@ const routes = createBrowserRouter([
         path: "editnews",
         element: <AdminLayout childrens={<EditPage />} />,
       },
-      // {
-      //   path: "elements",
-      //   element: <AdminLayout childrens={<Elements />} />,
-      // },
     ],
   },
   {
